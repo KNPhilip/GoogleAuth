@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAuth.Server", "GoogleAuth\Server\GoogleAuth.Server.csproj", "{24040582-8E78-4672-B00A-5D231E8C3891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAuth.Client", "GoogleAuth\Client\GoogleAuth.Client.csproj", "{13893403-8DCF-43CD-91F7-4F6144318A46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAuth.Shared", "GoogleAuth\Shared\GoogleAuth.Shared.csproj", "{11D339F3-629D-4C87-9E2C-21DD5E6D630A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24040582-8E78-4672-B00A-5D231E8C3891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24040582-8E78-4672-B00A-5D231E8C3891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24040582-8E78-4672-B00A-5D231E8C3891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24040582-8E78-4672-B00A-5D231E8C3891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13893403-8DCF-43CD-91F7-4F6144318A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13893403-8DCF-43CD-91F7-4F6144318A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13893403-8DCF-43CD-91F7-4F6144318A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13893403-8DCF-43CD-91F7-4F6144318A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D339F3-629D-4C87-9E2C-21DD5E6D630A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D339F3-629D-4C87-9E2C-21DD5E6D630A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D339F3-629D-4C87-9E2C-21DD5E6D630A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D339F3-629D-4C87-9E2C-21DD5E6D630A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4D5D25D-7203-4E6F-99DB-403401DF2A1F}
+	EndGlobalSection
+EndGlobal
