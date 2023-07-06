@@ -1,8 +1,15 @@
 ﻿@page "/"
+@using GoogleAuth.Shared.Models;
+@inject HttpClient Http
 
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var employees = await Http.GetFromJsonAsync<List<Employee>>("api/employee");
+    }
+}
