@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using GoogleAuth.Shared.Models;
 @inject HttpClient Http
+@inject AuthenticationStateProvider AuthStateProvider
 
 <PageTitle>Index</PageTitle>
 
@@ -10,6 +11,10 @@ Welcome to your new app.
 @code {
     protected override async Task OnInitializedAsync()
     {
-        var employees = await Http.GetFromJsonAsync<List<Employee>>("api/employee");
+        var user = (await AuthStateProvider.GetAuthenticationStateAsync()).User.Identity;
+        if (user is not null && user.IsAuthenticated)
+        {
+            var employees = await Http.GetFromJsonAsync<List<Employee>>("api/employee");
+        }
     }
 }
