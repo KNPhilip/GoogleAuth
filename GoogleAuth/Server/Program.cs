@@ -1,9 +1,15 @@
-using GoogleAuth.Server.Data;
-using GoogleAuth.Server.Models;
-using Microsoft.AspNetCore.Authentication;
+global using GoogleAuth.Server.Data;
+global using GoogleAuth.Server.Models;
+global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.EntityFrameworkCore;
+global using GoogleAuth.Shared.Models;
+global using System.Security.Claims;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.ResponseCompression;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -15,6 +15,12 @@ namespace GoogleAuth.Server.Data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<ApplicationUser>().Navigation(e => e.Employees).AutoInclude();
+        }
+
         public DbSet<Employee> Employees => Set<Employee>();
     }
 }
